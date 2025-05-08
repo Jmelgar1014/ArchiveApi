@@ -1,0 +1,15 @@
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/ArchiveApi
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/appsettings.Development.json
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/appsettings.json
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/ArchiveApi.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/ArchiveApi.deps.json
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/ArchiveApi.runtimeconfig.json
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/ArchiveApi.pdb
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/AutoMapper.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/Microsoft.EntityFrameworkCore.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/Microsoft.OpenApi.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/MySqlConnector.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/publish/Pomelo.EntityFrameworkCore.MySql.dll
