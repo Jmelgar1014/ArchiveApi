@@ -37,3 +37,4 @@
 /Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/obj/Debug/net9.0/ArchiveApi.genruntimeconfig.cache
 /Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/obj/Debug/net9.0/ref/ArchiveApi.dll
 /Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/bin/Debug/net9.0/AutoMapper.dll
+/Users/josemelgar/Desktop/Projects/ArchiveToolApi/ArchiveApi/obj/Debug/net9.0/ArchiveApi.sourcelink.json
