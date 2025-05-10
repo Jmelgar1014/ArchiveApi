@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "ArchiveApi/1.0.0": {
         "dependencies": {
-          "AutoMapper": "1.1.0.118",
+          "AutoMapper": "14.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.2",
           "Microsoft.EntityFrameworkCore": "8.0.13",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.13",
@@ -18,11 +18,14 @@
           "ArchiveApi.dll": {}
         }
       },
-      "AutoMapper/1.1.0.118": {
+      "AutoMapper/14.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.2"
+        },
         "runtime": {
-          "lib/AutoMapper.dll": {
-            "assemblyVersion": "1.1.0.188",
-            "fileVersion": "1.1.0.188"
+          "lib/net8.0/AutoMapper.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.0.0"
           }
         }
       },
@@ -155,12 +158,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AutoMapper/1.1.0.118": {
+    "AutoMapper/14.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Qn0aw2Oi7lmi3cu125XdrgBoGBCJj2YA9nXo50RMcg6UyWRfGV+EIhcfDT0MrVBMYDgWjQv5fWkf9MYwM52U3A==",
-      "path": "automapper/1.1.0.118",
-      "hashPath": "automapper.1.1.0.118.nupkg.sha512"
+      "sha512": "sha512-OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "path": "automapper/14.0.0",
+      "hashPath": "automapper.14.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/9.0.2": {
       "type": "package",
