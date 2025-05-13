@@ -5,11 +5,11 @@ using AutoMapper;
 
 namespace ArchiveApi.Profiles;
 
-public class ItemProfile : Profile
+public class UserProfile : Profile
 {
-  public ItemProfile()
+
+  public UserProfile()
   {
-    CreateMap<Item, ItemDto>();
-    CreateMap<InsertDto, Item>();
+    CreateMap<UserInsertDto, Users>();
   }
 }

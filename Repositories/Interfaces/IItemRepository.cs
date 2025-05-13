@@ -1,4 +1,5 @@
 using System;
+using ArchiveApi.Dtos;
 using ArchiveApi.Models;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
@@ -6,13 +7,13 @@ namespace ArchiveApi.Repositories.Interfaces;
 
 public interface IItemRepository
 {
-  List<Item> GetItems();
+  List<ItemDto> GetItems();
 
   void SaveChanges();
 
-  void AddToDb(Item item);
+  void AddToDb(InsertDto item);
 
-  Item GetItem(int Id);
+  ItemDto GetItem(int Id);
   
   void RemoveItem(int Id);
 

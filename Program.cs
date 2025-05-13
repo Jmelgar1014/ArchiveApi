@@ -1,6 +1,8 @@
 using ArchiveApi.Models;
+using ArchiveApi.Profiles;
 using ArchiveApi.Repositories.Implementations;
 using ArchiveApi.Repositories.Interfaces;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,11 +13,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
     new MySqlServerVersion(new Version(8,0,36))));
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddAutoMapper(typeof(ItemProfile));
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

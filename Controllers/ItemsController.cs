@@ -1,7 +1,9 @@
 using System.Runtime.CompilerServices;
+using ArchiveApi.Dtos;
 using ArchiveApi.Models;
 using ArchiveApi.Repositories.Implementations;
 using ArchiveApi.Repositories.Interfaces;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,25 +15,29 @@ namespace ArchiveApi.Controllers
     public class ItemsController : ControllerBase
     {
         private readonly IItemRepository _itemRepository;
-        public ItemsController(IItemRepository itemRepository)
+
+        private readonly IMapper _mapper;
+        public ItemsController(IItemRepository itemRepository, IMapper mapper)
         {
             _itemRepository = itemRepository;
+
+            _mapper = mapper;
         }
 
         //Get all items
         [HttpGet]
-        public List<Item> GetItems()
+        public ActionResult<ItemDto> GetItems()
         {
-            var items = _itemRepository.GetItems().ToList();
+            var items = _itemRepository.GetItems();
 
-            return items;
+            return Ok(items);
         }
 
         //Get item by Id
         [HttpGet("{Id}")]
-        public Item GetItem(int Id)
+        public ItemDto GetItem(int Id)
         {
-            Item item = _itemRepository.GetItem(Id);
+            ItemDto item = _itemRepository.GetItem(Id);
 
             return item;
         }
@@ -45,9 +51,10 @@ namespace ArchiveApi.Controllers
 
         //Add new item
         [HttpPost]
-        public void AddToDb([FromBody]Item item)
+        public void AddToDb([FromBody]InsertDto item)
         {
             _itemRepository.AddToDb(item);
+            
         }
 
         //Get all item names
